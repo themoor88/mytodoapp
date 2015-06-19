@@ -1,4 +1,17 @@
 <div class="container">
+  <!-- Todos Input -->
+  <form role="form" data-ng-submit="addTodo()">
+    <div class="row">
+      <div class="input-group">
+        <input type="text" data-ng-model="todo" placeholder="What needs to be done?">
+        <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="Add">
+        </span>
+      </div>
+    </div>
+  </form>
+
+  <!-- Todos List -->
   <h2>My Todos</h2>
   <p class="form-group" data-ng-repeat="todo in todos">
     <input type="text" data-ng-model="todo" class="form-control">
